@@ -48,13 +48,11 @@ public class Program_UI
                     break;
                 case "5":
                     Console.Clear();
-
-                    System.Console.WriteLine("Bye bye!");
-
+                    System.Console.WriteLine("Now exiting the system...");
                     keepRunning = false;
                     break;
                 default:
-                    System.Console.WriteLine("Read better and pick a number from one of the options");
+                    System.Console.WriteLine("That isn't an option...please pick from 1-5");
                     break;
             }
 
@@ -88,12 +86,12 @@ public class Program_UI
         if (itemAdded)
         {
             Console.Clear();
-            System.Console.WriteLine("Item added!\n");
+            System.Console.WriteLine("Item was added!\n");
         }
         else
         {
             Console.Clear();
-            System.Console.WriteLine("Creating new item was unsuccessful\n");
+            System.Console.WriteLine("There was a problem creating your new item, please try again...\n");
         }
     }
 
@@ -149,7 +147,7 @@ public class Program_UI
         {
             Console.Clear();
 
-            System.Console.WriteLine("Something went wrong...");
+            System.Console.WriteLine("There was a problem updating your item, please try again...");
         }
     }
 
@@ -167,13 +165,13 @@ public class Program_UI
         {
             Console.Clear();
 
-            System.Console.WriteLine("Delete successful!");
+            System.Console.WriteLine("Deletion was successful!");
         }
         else
         {
             Console.Clear();
 
-            System.Console.WriteLine("There was a problem deleting your item...");
+            System.Console.WriteLine("There was a problem deleting your item, please try again...");
         }
     }
 

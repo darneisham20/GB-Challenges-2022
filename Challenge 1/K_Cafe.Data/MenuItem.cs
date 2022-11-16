@@ -16,7 +16,6 @@ public class MenuItem
         Price = price;
     }
 
-    // Should be assigned from CafeRepository.cs file
     public int MealNum { get; set; }
 
     public string Name { get; set; }
