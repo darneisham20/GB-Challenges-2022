@@ -177,7 +177,7 @@ public class Program_UI
 
     private void Seed()
     {
-        MenuItem crabBoil = new MenuItem(_repo.GetAllItems().Count + 1, "Crab boil", "The most delicious, mouth watering, scrumptious combination of some of the most delicate seafood this planet has ever known", "crab, garlic, spices, butter, shrimp, sausages, potatoes, corn on the cob, boiled egg", 36.00);
+        MenuItem crabBoil = new MenuItem(_repo.GetAllItems().Count + 1, "Crab Boil", "The most delicious, mouth watering, scrumptious combination of some of the most delicate seafood this planet has ever known", "crab, garlic, spices, butter, shrimp, sausages, potatoes, corn on the cob, boiled egg", 36.00);
         _repo.AddNewItem(crabBoil);
 
         MenuItem pepperoniPizza = new MenuItem(_repo.GetAllItems().Count + 1, "Pep pizza", "An italian-american delicacy topped with tomato sauce, mozzerlla cheese, and pepperoni pizza on a bedding of soft dough", "dough, sauce, cheese, pepperoni", 5.00);
