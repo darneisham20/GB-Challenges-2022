@@ -30,7 +30,7 @@ public class Program_UI
             + "4. Delete item by menu item number\n"
             + "5. Exit");
 
-            string? input = Console.ReadLine();
+            string input = Console.ReadLine();
 
             switch (input)
             {
