@@ -24,8 +24,5 @@
   <ItemGroup>
     <ProjectReference Include="..\WTF_Delivery.Data\WTF_Delivery.Data.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WTF_Delivery.UI\WTF_Delivery.UI.csproj" />
-  </ItemGroup>
 
 </Project>

@@ -13,15 +13,15 @@ public class Program_UI
         RunApplication();
     }
 
-    public RunApplication()
+    public void RunApplication()
     {
         bool isRunning = true;
         while (isRunning)
         {
             Console.Clear();
 
-            System.Console.WriteLine("Welcome to the Warner Transit Federal Tracking System\n" +
-            "Please select from the following delivery tracking options:\n" +
+            System.Console.WriteLine("Welcome to the Warner Transit Federal Tracking System\n"
+            + "Please select from the following delivery tracking options:\n"
             +"1. Add new delivery\n"
             + "2. List all deliveries\n"
             + "3. List all en route / completed deliveries\n"
@@ -29,7 +29,7 @@ public class Program_UI
             + "5. Cancel a delivery\n"
             + "6. Exit system");
 
-            string? input = Console.ReadLine();
+            string input = Console.ReadLine();
 
             switch (input)
             {
@@ -51,7 +51,7 @@ public class Program_UI
                 case "6":
                     System.Console.WriteLine("System has been exited!");
 
-                    keepRunning = false;
+                    isRunning = false;
                     break;
                 default:
                     System.Console.WriteLine("Option picked is not available. Please choose from one of the options listed above.");
@@ -144,7 +144,7 @@ public class Program_UI
                 + "2. EnRoute Deliveries\n"
                 + "3. Completed Deliveries\n"
                 + "4. Main Menu");
-                string? serviceStatusString = Console.ReadLine();
+                string serviceStatusString = Console.ReadLine();
 
                 switch (serviceStatusString)
                 {

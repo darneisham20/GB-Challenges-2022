@@ -11,7 +11,7 @@ public class WTF_Delivery_Tests
         string expected = "111";
         string actual = content.OrderNumber;
 
-        Assert.AreEqual(expected, actual);
+        Assert.Same(expected, actual);
     }
 
     public void SetCorrectItemName()
@@ -22,6 +22,6 @@ public class WTF_Delivery_Tests
         string expected = "Macintosh Laptop Charger";
         string actual = content.ItemName;
 
-        Assert.AreEqual(expected, actual);
+        Assert.Same(expected, actual);
     }
 }

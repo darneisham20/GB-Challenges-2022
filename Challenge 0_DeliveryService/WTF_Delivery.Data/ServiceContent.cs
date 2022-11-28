@@ -1,6 +1,4 @@
-﻿namespace WTF_Delivery.Data;
-
-public class ServiceContent
+﻿public class ServiceContent
 {
     public ServiceContent() { }
 

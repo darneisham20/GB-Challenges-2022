@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class Program_UI
 {
-    CafeRepository _repo = new CafeRepository();
+    MenuItemRepository _repo = new MenuItemRepository();
 
     public void Run()
     {
@@ -23,8 +23,8 @@ public class Program_UI
             Console.Clear();
 
             System.Console.WriteLine("Welcome to Komodo Cafe!\n" +
-            "Please select from the following options:\n" +
-            +"1. Create new menu items\n"
+            "Please select from the following options:\n"
+            + "1. Create new menu items\n"
             + "2. View menu items\n"
             + "3. Update item by menu item number\n"
             + "4. Delete item by menu item number\n"
@@ -49,7 +49,7 @@ public class Program_UI
                 case "5":
                     Console.Clear();
                     System.Console.WriteLine("Now exiting the system...");
-                    keepRunning = false;
+                    isRunning = false;
                     break;
                 default:
                     System.Console.WriteLine("That isn't an option...please pick from 1-5");

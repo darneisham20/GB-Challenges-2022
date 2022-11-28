@@ -6,12 +6,12 @@ public class K_Cafe_Repository_Tests
     public void SetCorrectMealNum()
     {
         MenuItem content = new MenuItem();
-        content.MealNum = "5";
+        content.MealNum = 5;
 
         string expected = "5";
-        string actual = content.MealNum;
+        int actual = content.MealNum;
 
-        Assert.AreEqual(expected, actual);
+        Assert.Same(expected, actual);
     }
 
     public void SetCorrectName()
@@ -22,17 +22,17 @@ public class K_Cafe_Repository_Tests
         string expected = "Crab Boil";
         string actual = content.Name;
 
-        Assert.AreEqual(expected, actual);
+        Assert.Same(expected, actual);
     }
 
     public void SetCorrectPrice()
     {
         MenuItem content = new MenuItem();
-        content.Price = "36.00";
+        content.Price = 36.00;
 
         string expected = "36.00";
-        string actual = content.Price;
+        double actual = content.Price;
 
-        Assert.AreEqual(expected, actual);
+        Assert.Same(expected, actual);
     }
 }
